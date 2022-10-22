@@ -1,0 +1,16 @@
+<div class="form-froup row">
+
+    <label class="col-sm-2 col-form-label"> FOTO </label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Foto"
+        placeholder="Enter Foto">
+    </div>
+</div>
+
+<button (click)="addFotos()" *ngIf="fot.IdFoto==0" class="btn btn-primary">
+    AGREGAR
+</button>
+
+<button (click)="updateFotos()" *ngIf="fot.IdFoto!=0" class="btn btn-primary">
+    ACTUALIZAR
+</button>
